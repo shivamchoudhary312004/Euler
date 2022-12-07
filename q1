@@ -1,0 +1,23 @@
+import java.io.*;
+class Simple_Pytha
+{
+ public static void main(String args[])
+{
+ BufferedReader in= new BufferedReader
+ (new InputStreamReader(System.in));
+  int i,j,k,p=1;
+  for(i=1;i<=1000;i++)
+    {
+     for(j=1;j<=1000;j++)
+      {
+        for(k=1;k<=1000;k++)
+        { 
+         if((i*i+j*j==k*k)&&(i+j+k==1000)&&(i<j)&&(j<k))
+          { p=i*j*k;
+         break;}
+        }
+    }
+}System.out.print(p+" "+i);
+
+}
+}
