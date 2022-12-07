@@ -1,5 +1,5 @@
 import java.io.*;
-class Simple_Pytha
+class Pytha
 {
  public static void main(String args[])
 {
@@ -17,7 +17,7 @@ class Simple_Pytha
          break;}
         }
     }
-}System.out.print(p+" "+i);
+}System.out.print(p);
 
 }
 }
