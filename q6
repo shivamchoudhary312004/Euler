@@ -1,0 +1,25 @@
+import java.io.*;
+class Palindrome
+{
+  public static void main(String[]args) throws IOException
+  {
+   BufferedReader in= new BufferedReader
+   (new InputStreamReader(System.in));
+    int i,j,l,max=0,n=1,m=0,s=0,d;
+    for(i=100;i<=999;i++)
+      {
+        for(j=100;j<=999;j++)
+         {
+          n=i*j;m=n; s=0;
+          while(m>0)
+          {
+            d=m%10;
+            s=s*10+d;
+            m=m/10;
+          }
+          if(s==n)
+           {if(s>max)
+            max=s;}
+        }
+        }
+    System.out.println(" Palindrome="+max);}}
